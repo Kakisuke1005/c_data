@@ -1,0 +1,13 @@
+Script started on Tue May  7 20:20:57 2019
+u306145@cse-ssh2[31]: ./3-5
+5
+100
+67
+34
+98
+70
+合計=584
+u306145@cse-ssh2[32]: exit
+exit
+
+Script done on Tue May  7 20:21:26 2019

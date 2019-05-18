@@ -1,0 +1,30 @@
+Script started on Tue Apr 23 16:46:25 2019
+u306145@cse-ssh2[31]: ./2-1
+正の偶数を入力して下さい:4
+sum(4) = 6
+u306145@cse-ssh2[32]: ./2-2
+文字列：program
+文字列の長さ：7
+文字列（逆順）：margorp
+u306145@cse-ssh2[33]: ./2-3
+自然数を入力して下さい:5
+関数Factorial(5)にはいりました
+関数Factorial(4)にはいりました
+関数Factorial(3)にはいりました
+関数Factorial(2)にはいりました
+関数Factorial(1)にはいりました
+関数Factorial(0)にはいりました
+関数Factorial(0)から出ます:Factorial(0)=1
+関数Factorial(1)から出ます:Factorial(1)=1
+関数Factorial(2)から出ます:Factorial(2)=2
+関数Factorial(3)から出ます:Factorial(3)=6
+関数Factorial(4)から出ます:Factorial(4)=24
+関数Factorial(5)から出ます:Factorial(5)=120
+5の階乗は120です
+u306145@cse-ssh2[34]: ./2-4
+いくつ買いますか:13
+ポイントは72点です
+u306145@cse-ssh2[35]: exit
+exit
+
+Script done on Tue Apr 23 16:47:03 2019
