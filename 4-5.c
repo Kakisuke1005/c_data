@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<stdlib.h>
 #define N 15
 int get_length(char *word);
 int main()
@@ -28,10 +27,10 @@ int main()
 
 int get_length(char *word)
 {
-	int num=0;
-	while(*word!='\0'){
-		num++;
-		word++;
-	}
-	return num;
+  int num=0;
+  while(*word!='\0'){
+    num++;
+    word++;
+  }
+  return num;
 }
