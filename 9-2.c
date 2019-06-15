@@ -13,28 +13,25 @@ int n_comp_quick=0,n_comp_bubble=0,n_exchange_quick=0,n_exchange_bubble=0;
 int main()
 {
   int num,i,j;
-  int x[NUM],y[NUM];
-  for(i=0;i<5;i++){ //実行回数のループ
-    num=20;
-    srand(time(NULL));
-    srand(0);
+  int a[NUM],b[NUM];
+  srand(0);
+  for(i=0;i<5;i++){ //実行化数のループ
+    num=(20*i)+20;
     for(j=0;j<num;j++){
-      x[j]=rand();
-      y[j]=x[j];
+      a[j]=rand();
+      b[j]=a[j];
     }
-    bubble(y,num);
-    quick(x,0,num-1);
-    printf("データ数%d個\n",num);
+    quick(a,0,num-1);
+    bubble(b,num);
+    printf("データ数 %d個\n",num);
     printf("＜クイックソート法＞\n");
     printf("比較回数 %d回\n",n_comp_quick);
     printf("交換回数 %d回\n",n_exchange_quick);
     printf("＜バブルソート法＞\n");
+    printf("交換回数 %d回\n",n_exchange_bubble);
     printf("比較回数 %d回\n",n_comp_bubble);
-    printf("交換回数 %d回\n",n_comp_bubble);
-    printf("--\n");
-    num+=20;
+    printf("--\n"); 
   }
-  return 0;
 }
 
 void swap(int *a, int *b)
@@ -81,8 +78,8 @@ void bubble(int y[], int num)
     for(j=0;j<i;j++){
       n_comp_bubble++;
       if(y[j]>y[j+1]){
-	n_exchange_bubble++;
-	swap(&y[j],&y[j+1]);
+	      n_exchange_bubble++;
+	      swap(&y[j],&y[j+1]);
       }
     }
   }
