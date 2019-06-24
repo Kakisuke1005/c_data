@@ -1,0 +1,25 @@
+Script started on Mon Jun 24 19:47:31 2019
+u306145@cse-ssh2[31]: ./10-2
+Input integer number 10 times
+x[0]:4
+x[1]:5
+x[2]:6
+x[3]:-4
+x[4]:0
+x[5]:10
+x[6]:1
+x[7]:-10
+x[8]:10
+x[9]:1
+-10 -4 0 1 1 4 5 6 10 10 
+Number to search:1
+1 is located at 4
+u306145@cse-ssh2[32]: ./10-3
+Input file name:test1.txt
+Number to search:500
+線形探索にかかった計算回数：400
+二分探索にかかった計算回数：11
+u306145@cse-ssh2[33]: exit
+exit
+
+Script done on Mon Jun 24 19:49:03 2019
