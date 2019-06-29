@@ -82,7 +82,7 @@ void ShowList(LIST data[])
   printf("\n");
 }
 
-int InsertNode(int no,int insdata,LIST data[])  //データの末尾に挿入不可　修正必須
+int InsertNode(int no,int insdata,LIST data[])
 {
   int blank; //空いてる場所
   int num=0,i=head,pre=0;
