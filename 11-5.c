@@ -57,6 +57,8 @@ int main()
       id=getNode(no,data);
       if(id==-1){
       	printf("---取得できませんでした---\n");
+      }else{
+        printf("%d\n",id);
       }
       break;
     case -1:
@@ -89,7 +91,7 @@ int InsertNode(int no,int insdata,LIST data[])  //データの末尾に挿入不
       break;
     }
   }
-  if(no<0||blank==MAX){ //挿入位置対象外と空きがない場合挿入不可
+  if(no<0||blank==MAX){
     return -1;
   }
   while(1){
@@ -110,9 +112,6 @@ int InsertNode(int no,int insdata,LIST data[])  //データの末尾に挿入不
     }
     pre=i;
     i=data[i].nextindex;
-    if(data[i].nextindex==-1){
-      return -1;
-    }
   }
 }
 
@@ -146,10 +145,9 @@ int DeleteNode(int no,LIST data[])
   }
 }
 
-int getNode(int no,LIST data[])  //本来は表示できない場所が表示される　修正
+int getNode(int no,LIST data[])
 {
   int num=0,i=head;
-  int ans;
   if(no<0){
     return -1;
   }
@@ -157,13 +155,11 @@ int getNode(int no,LIST data[])  //本来は表示できない場所が表示さ
     if(data[i].nodedata!=-1){
       num++;
       if(no==num){
-        ans=data[i].nodedata;
-        return 0;
+        return data[i].nodedata;
+      }else if(data[i].nextindex==-1){
+        return -1;
       }
     }
     i=data[i].nextindex;
-    if(num==MAX){
-      return -1;
-    }
   }
 }
