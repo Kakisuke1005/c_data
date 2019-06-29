@@ -1,4 +1,5 @@
 #include<stdio.h>
+
 typedef struct{
   char name[20];
   int id;
