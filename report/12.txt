@@ -1,0 +1,137 @@
+Script started on Mon Jul  8 20:11:44 2019
+u306145@cse-ssh2[31]: ./12-4
+(1) Push  (2) Pop  (0) Exit :1
+Data:111
+Stack : [111]
+(1) Push  (2) Pop  (0) Exit :1
+Data:222
+Stack : [111][222]
+(1) Push  (2) Pop  (0) Exit :1
+Data:333
+Stack : [111][222][333]
+(1) Push  (2) Pop  (0) Exit :1
+Data:444
+Stack : [111][222][333][444]
+(1) Push  (2) Pop  (0) Exit :1
+Data:555
+Stack : [111][222][333][444][555]
+(1) Push  (2) Pop  (0) Exit :1
+Data:666
+Stack Overflow!
+Stack Push is failed!
+(1) Push  (2) Pop  (0) Exit :2
+Pop data is 555
+Stack : [111][222][333][444]
+(1) Push  (2) Pop  (0) Exit :2
+Pop data is 444
+Stack : [111][222][333]
+(1) Push  (2) Pop  (0) Exit :1
+Data:666
+Stack : [111][222][333][666]
+(1) Push  (2) Pop  (0) Exit :2
+Pop data is 666
+Stack : [111][222][333]
+(1) Push  (2) Pop  (0) Exit :2
+Pop data is 333
+Stack : [111][222]
+(1) Push  (2) Pop  (0) Exit :2
+Pop data is 222
+Stack : [111]
+(1) Push  (2) Pop  (0) Exit :2
+Pop data is 111
+Stack : 
+(1) Push  (2) Pop  (0) Exit :2
+Stack Empty!
+Stack Pop is failed!
+(1) Push  (2) Pop  (0) Exit :0
+u306145@cse-ssh2[32]: ./12-5
+(1) Enqueue (2) Dequeue (0) Exit :1
+Data:111
+Queue :[111][   ][   ][   ][   ]
+(1) Enqueue (2) Dequeue (0) Exit :1
+Data:222
+Queue :[111][222][   ][   ][   ]
+(1) Enqueue (2) Dequeue (0) Exit :1
+Data:333
+Queue :[111][222][333][   ][   ]
+(1) Enqueue (2) Dequeue (0) Exit :1
+Data:444
+Queue :[111][222][333][444][   ]
+(1) Enqueue (2) Dequeue (0) Exit :1
+Data:555
+Queue :[111][222][333][444][555]
+(1) Enqueue (2) Dequeue (0) Exit :1
+Data:666
+Queue is Full!
+Enqueue is failed!
+(1) Enqueue (2) Dequeue (0) Exit :2
+Dequeue data is 111
+Queue :[   ][222][333][444][555]
+(1) Enqueue (2) Dequeue (0) Exit :2
+Dequeue data is 222
+Queue :[   ][   ][333][444][555]
+(1) Enqueue (2) Dequeue (0) Exit :2
+Dequeue data is 333
+Queue :[   ][   ][   ][444][555]
+(1) Enqueue (2) Dequeue (0) Exit :1
+Data:666
+Queue :[666][   ][   ][444][555]
+(1) Enqueue (2) Dequeue (0) Exit :1
+Data:777
+Queue :[666][777][   ][444][555]
+(1) Enqueue (2) Dequeue (0) Exit :2
+Dequeue data is 444
+Queue :[666][777][   ][   ][555]
+(1) Enqueue (2) Dequeue (0) Exit :2
+Dequeue data is 555
+Queue :[666][777][   ][   ][   ]
+(1) Enqueue (2) Dequeue (0) Exit :2
+Dequeue data is 666
+Queue :[   ][777][   ][   ][   ]
+(1) Enqueue (2) Dequeue (0) Exit :2
+Dequeue data is 777
+Queue :[   ][   ][   ][   ][   ]
+(1) Enqueue (2) Dequeue (0) Exit :2
+Queue is Empty!
+Dequeue is failed!
+(1) Enqueue (2) Dequeue (0) Exit :0
+u306145@cse-ssh2[33]: 12-6
+(1) Push  (2) Pop  (3) Enq (4) Deq (5) Push(Deq)  (6) Enq(Pop)  (0) Exit :1
+Data:111
+Stack : [111]
+(1) Push  (2) Pop  (3) Enq (4) Deq (5) Push(Deq)  (6) Enq(Pop)  (0) Exit :1
+Data:222
+Stack : [111][222]
+(1) Push  (2) Pop  (3) Enq (4) Deq (5) Push(Deq)  (6) Enq(Pop)  (0) Exit :3
+Data:333
+Queue : [333][   ][   ][   ][   ]
+(1) Push  (2) Pop  (3) Enq (4) Deq (5) Push(Deq)  (6) Enq(Pop)  (0) Exit :3
+Data:444
+Queue : [333][444][   ][   ][   ]
+(1) Push  (2) Pop  (3) Enq (4) Deq (5) Push(Deq)  (6) Enq(Pop)  (0) Exit :1
+Data:555
+Stack : [111][222][555]
+(1) Push  (2) Pop  (3) Enq (4) Deq (5) Push(Deq)  (6) Enq(Pop)  (0) Exit :5
+Dequeue data is 333
+Queue : [   ][444][   ][   ][   ]
+Stack : [111][222][555][333]
+(1) Push  (2) Pop  (3) Enq (4) Deq (5) Push(Deq)  (6) Enq(Pop)  (0) Exit :6
+Pop data is 333
+Stack : [111][222][555]
+Queue : [   ][444][333][   ][   ]
+(1) Push  (2) Pop  (3) Enq (4) Deq (5) Push(Deq)  (6) Enq(Pop)  (0) Exit :3
+Data:666
+Queue : [   ][444][333][666][   ]
+(1) Push  (2) Pop  (3) Enq (4) Deq (5) Push(Deq)  (6) Enq(Pop)  (0) Exit :5
+Dequeue data is 444
+Queue : [   ][   ][333][666][   ]
+Stack : [111][222][555][444]
+(1) Push  (2) Pop  (3) Enq (4) Deq (5) Push(Deq)  (6) Enq(Pop)  (0) Exit :5
+Dequeue data is 333
+Queue : [   ][   ][   ][666][   ]
+Stack : [111][222][555][444][333]
+(1) Push  (2) Pop  (3) Enq (4) Deq (5) Push(Deq)  (6) Enq(Pop)  (0) Exit :0
+u306145@cse-ssh2[34]: exit
+exit
+
+Script done on Mon Jul  8 20:15:23 2019
