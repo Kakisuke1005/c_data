@@ -7,7 +7,6 @@
 int push(int data);
 int pop();
 void swap(int *a,int *b);
-void ShowStack();
 
 int stack[STACK_SIZE];
 int sp=-1; //スタックポインタ
@@ -32,6 +31,7 @@ int main()
 				push(ans);
 			break;
 			case '-':
+				swap(&stack[sp],&stack[sp-1]);
 				ans=pop()-pop();
 				push(ans);
 			break;
@@ -45,7 +45,6 @@ int main()
 			break;
 		}
 		i++;
-		ShowStack();
 		if(i==length){
 			break;
 		}
@@ -82,14 +81,4 @@ void swap(int *a,int *b){
 	int tmp=*a;
 	*a=*b;
 	*b=tmp;
-}
-
-void ShowStack()
-{
-int i;
-printf("Stack : ");
-for ( i=0; i<=sp; i++ ){ // sp:スタックポインタ
-printf("[%d]", stack[i]);
-}
-printf(" \n");
 }
