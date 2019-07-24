@@ -58,7 +58,7 @@ int push(int data)
 	sp++;
 	if(sp>=STACK_SIZE){
 		sp--;
-		return-1;
+		return -1;
 	}else{
 		stack[sp]=data;
 		return 0;
